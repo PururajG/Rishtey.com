@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishtey </title>
     <!-- Favicon -->
-    <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- Using Google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,7 @@
 <body>
     <!------------------------------------- Header section start here------------------------------------>
 
+
     <div class="header" id="Home">
         <div id="Home" class="navbar display-flex justify-center navbar-expand-lg navbar-light ">
             <a class="navbar-brand mb-0 h1" href="index.html"><img draggable="false" src="./images/logo.png"
@@ -39,11 +40,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active  ">
-                        <a class="nav-link " disabled href="#Home"><i class="bi bi-house-door"></i> Home </a>
+                        <a class="nav-link " href="#Home"><i class="bi bi-house-door"></i> Home </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#About"><i class="bi bi-info-circle"></i> About</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#Services"><i class="bi bi-info-circle"></i> Services</a>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#Gallery"><i class="bi bi-images"></i> Gallery</a>
                     </li>
@@ -51,7 +55,7 @@
                         <a class="nav-link" href="#Team"><i class="bi bi-people"></i> Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#Contact"><i class="bi bi-person-circle"></i> Contact</a>
+                        <a class="nav-link " href="#Contactus"><i class="bi bi-person-circle"></i> Contact</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -76,18 +80,64 @@
         </div>
 
         <div class="header-content">
-            <h2>You'r Welcome to rishtey</h2>
+            <h2>We bring people together.</h2>
             <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, minus consequuntur. Numquam
                 nostrum
                 voluptatum itaque.</p>
             <div class="mt-5">
-                <a class="login" href="login.html">
-                    <button type="button" class="btn btn-outline-success"><i class="bi bi-box-arrow-in-right"></i>
-                        Login</button></a>
-                <a class="login regestration" href="Regiister.html">
+                <!-- <a class="login" href="login.html"> -->
+                <button type="button" class="home-login-btn btn btn-outline-success" data-target="#mymodal"
+                    data-toggle="modal"><i class="bi bi-box-arrow-in-right"></i>
+                    Login</button>
+                <!-- </a> -->
+
+                <!-----------------------login form pop-up start------------------------>
+                <div class="modal fade" id="mymodal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="">Welcome back! Please login</h4>
+                                <button class="close" data-dismiss="modal"> &times;</button>
+                            </div>
+
+                            <div class="modal-body login-alert">
+                                <form action="#" class="needs-validation" novalidate>
+                                    <div class="form-group">
+                                        <label for="User name"> <i class="bi bi-envelope-fill "></i> Enter your
+                                            email</label>
+                                        <input type="text" class="form-control"  id="validationCustom01" required placeholder="Enter your email/phone">
+                                    </div>
+                                    <div class="form-group">
+
+                                        <label for="User name"> <i class="bi bi-key-fill  bi-2x"></i> Enter your
+                                            password</label>
+                                        <input type="password" class="form-control" placeholder="Enter your password">
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <a class="" href="dashboard.html ">
+                                    <button class="btn btn-outline-secondary ">Login account</button></a>
+                            </div>
+                            <div class=" modal-footer justify-content-center">
+
+                                <a class="modal-create-acc " href="Regiister.html">Don't have any account? Create Now.
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-----------------------login form pop-up rnd------------------------>
+
+                <a class=" home-regestration-btn" href="Regiister.html">
                     <button type="button" class="btn btn-outline-info ml-5"><i class="bi bi-person-add"></i>
                         Regestration</button></a>
             </div>
+
+
+
 
         </div>
         <div class="top-header">
@@ -135,87 +185,92 @@
 
     <!------------------------------------- regestration form start here------------------------------------>
 
-    <div class="contact-us " id="Contact">
+    <div class="contact-us " id="">
         <div class="Register-head">
-            <h3 class="heading">Fill Your Details </h3>
+            <h3 class="heading">Search here </h3>
         </div>
-        <div class="contact-list">
-            <!-- <div class="location">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d219.40195052068339!2d79.42235537871485!3d28.37604117756847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a00721cb6ac073%3A0x5a36b780e8a3fadf!2sNehru%20Park%20Colony%2C%20Saket%2C%20Prem%20Nagar%2C%20Bareilly%2C%20Uttar%20Pradesh%20243003!5e0!3m2!1sen!2sin!4v1647713014786!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div> -->
-            <div class="user-form ">
-                <form action="#">
-                    <input type="text" placeholder="Enter your first name">
-                    <input type="text" placeholder="Enter your last name">
-                    <input type="email" placeholder="Enter your email">
-                    <input type="tel" placeholder="Enter your Phone No.">
-                    <input type="date" placeholder="Enter your DOB">
-                  
-                    <input type="" placeholder="Enter your address">
-                    <select name="select" id="">
-                        <option value="">Choose your City</option>
-                        <option value="">Amroha</option>
-                        <option value="">Moradabad</option>
-                        <option value="">Rampur</option>
-                        <option value="">Sambhal</option>
-                    </select>
-                    <input class="btn w-build" type="submit" value="Register Now">
-                </form>
-            </div>
 
+        <div class="user-form ">
+            <form action="#">
+                <select name="select" id="">
+                    <option value="" aria-placeholder="looking for.">Looking for?</option>
+                    <option value="" aria-placeholder="looking for.">Bride</option>
+                    <option value="" aria-placeholder="looking for.">Groom</option>
+                </select>
+                <select name="select" id="">
+                    <option value="" aria-placeholder="looking for.">Religion</option>
+                    <option value="" aria-placeholder="looking for.">Hindu</option>
+                    <option value="" aria-placeholder="looking for.">Muslim </option>
+                    <option value="" aria-placeholder="looking for.">christian</option>
+                    <option value="" aria-placeholder="looking for.">Bodhh</option>
+                    <option value="" aria-placeholder="looking for.">Isai</option>
+                    <option value="" aria-placeholder="looking for.">Parsi</option>
+                    <option value="" aria-placeholder="looking for.">Sikh</option>
+                </select>
+                <select name="select" id="">
+                    <option value="" aria-placeholder="looking for.">Caste</option>
+                    <option value="" aria-placeholder="looking for.">Kumar</option>
+                    <option value="" aria-placeholder="looking for.">Gupta</option>
+                    <option value="" aria-placeholder="looking for.">Mali</option>
+                    <option value="" aria-placeholder="looking for.">Saini</option>
+                    <option value="" aria-placeholder="looking for.">Kashyap</option>
+                </select>
+
+                <input type="tel" maxlength="10" placeholder="Enter your Phone No.">
+                <input type="text" maxlength="2" placeholder="Enter age">
+
+                <input type="" placeholder="Enter your address">
+                <select name="select" id="">
+                    <option value="">Choose your City</option>
+                    <option value="">Amroha</option>
+                    <option value="">Moradabad</option>
+                    <option value="">Rampur</option>
+                    <option value="">Sambhal</option>
+                </select>
+                <input class="btn w-build" type="submit" value="Search Now">
+            </form>
         </div>
     </div>
 
 
+    <!-- <div class="servics mt-5" id="Services">
+        <h3 class="heading"> Our Services</h3>
+        <p class=" sub-heading text-center letter-space">Our best Services</p>
 
-    <!------------------------------------- gallery section start here------------------------------------>
-    <!-- <div class="gallery-container mt-5" id="Gallery">
-        <h3 class="heading">Gallery</h3>
-        <p class=" sub-heading text-center letter-space">Our latest pictures</p>
 
-        <div class="gallery mt-5 ">
-
-            <div class=" ">
-                <div class="gallery-i"> <img src="./images/Gallery (2).jpg" alt=""></div>
-                <div class="gallery-i"> <img src="./images/Gallery (3).jpg" alt=""></div>
-                <div class="gallery-i"> <img src="./images/Gallery (4).jpg" alt=""></div>
-                <div class="gallery-i"> <img src="./images/Gallery (4).jpg" alt=""></div>
-                <div class="gallery-i"> <img src="./images/Gallery (4).jpg" alt=""></div>
-                <div class="gallery-i"> <img src="./images/Gallery (4).jpg" alt=""></div>
-            
-
+        <div class="service-list">
+            <div class="service-item">
+                <i class="bi bi-arrow-up"></i>
+                <h3> Photography & vdography</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, id!</p>
             </div>
-
+            <div class="service-item">
+                <i class="bi bi-arrow-up"></i>
+                <h3> Beauty & Mackup </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, id!</p>
+            </div>
+            <div class="service-item">
+                <i class="bi bi-arrow-up"></i>
+                <h3> Wedding Cake & Flowres</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, id!</p>
+            </div>
+            <div class="service-item">
+                <i class="bi bi-arrow-up"></i>
+                <h3> Photography & vdography</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, id!</p>
+            </div>
+            <div class="service-item">
+                <i class="bi bi-arrow-up"></i>
+                <h3> Photography & vdography</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, id!</p>
+            </div>
+            <div class="service-item">
+                <i class="bi bi-arrow-up"></i>
+                <h3> Photography & vdography</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, id!</p>
+            </div>
         </div>
     </div> -->
-
-    <!-- <div class="contact-me mt-5" id="Contact">
-        <h3 class="heading">Contact Us </h3>
-
-        <div class="contact-me-list">
-            <div class="location">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d219.40195052068339!2d79.42235537871485!3d28.37604117756847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a00721cb6ac073%3A0x5a36b780e8a3fadf!2sNehru%20Park%20Colony%2C%20Saket%2C%20Prem%20Nagar%2C%20Bareilly%2C%20Uttar%20Pradesh%20243003!5e0!3m2!1sen!2sin!4v1647713014786!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="messege-form">
-                <form action="#">
-                    <input type="text" placeholder="Enter your name">
-                    <input type="email" placeholder="Enter your email">
-                    <input type="tel" placeholder="Enter your Phone No.">
-                    <input type="address" placeholder="Enter your address">
-                    <textarea type="textarea" cols="60" rows="3"
-                        placeholder="Enter your Messege">Write your messege here.. </textarea>
-                    <input class="btn" type="submit" value="Sent Messege">
-                </form>
-            </div>
-            
-        </div>
-    </div> -->
-
-
 
     <!-- /*-------------------- section tag start here -------------------- */ -->
     <div class="pictures mt-5" id="Gallery">
@@ -252,8 +307,6 @@
                     <button title="Click here for Issue this">View more </button></a>
             </div>
 
-
-
         </section>
     </div>
 
@@ -270,7 +323,7 @@
         <div class="Team-list mt-5 ">
             <div class="Team-item"><img src="./images/member (2).jpg" alt="">
                 <div class="team-content">
-                    <h3>Shubham Sharma</h3>
+                    <h3>Abhi Kumar</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, soluta! Lorem ipsum dolor sit
                         amet, consectetur adipisicing elit. Odio in sequi laudantium nobis facilis quam!</p>
                     <a href="#"><button class="btn-outline-secondary team-content-btn"><i
@@ -296,15 +349,41 @@
                                 class="bi bi-box-arrow-up-right"></i> Read more</button></a>
                 </div>
             </div>
-            <!-- <div><img src="./images/member (3).jpg" alt="">
-                <div class="Member-content">
-                    <h3>Member name</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, soluta!</p>
+            <div class="Team-item"><img src="./images/member (3).jpg" alt="">
+                <div class="team-content">
+                    <h3>Ak GUpta</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, soluta! Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Odio in sequi laudantium nobis facilis quam!</p>
+                    <a href="#"><button class="btn-outline-secondary team-content-btn"><i
+                                class="bi bi-box-arrow-up-right"></i> Read more</button></a>
                 </div>
-            </div> -->
+            </div>
+
 
         </div>
     </div>
+    <!-------------------------------- Here the contact us section is strat -------------------------------->
+    <div class="Feedback" id="Contactus">
+        <h3 class="heading mt-5">Contact Us </h3>
+        <div class="Feedback-list">
+            <div class="user-form">
+                <form action="#">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="address" placeholder="Enter your address">
+                    <textarea type="textarea" cols="20" rows="1.5"
+                        placeholder="Enter your Messege">Write your messege here.. </textarea>
+                    <input class="btn" type="submit" value="Sent Messege">
+                </form>
+            </div>
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d219.40195052068339!2d79.42235537871485!3d28.37604117756847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a00721cb6ac073%3A0x5a36b780e8a3fadf!2sNehru%20Park%20Colony%2C%20Saket%2C%20Prem%20Nagar%2C%20Bareilly%2C%20Uttar%20Pradesh%20243003!5e0!3m2!1sen!2sin!4v1647713014786!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -318,11 +397,12 @@
                 <ul class="lists">
 
                     <li>
-                        <!-- <p class="foot-heading"> <img src="./Images/Raj-hotel.png" alt=""></p> -->
+                        <!-- <p class="foot-heading"> <img src="images/logo.png" alt=""></p> -->
                         <p class="foot-about">Your Welcome to the best couple plateform. Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit. Velit quas
                             corporis ipsa nulla repellat molestias illo itaque necessitatibus perspiciatis facilis unde,
                             veritatis, tenetur optio accusamus.</p>
+                    </li>
                 </ul>
                 <!-- <li>Our Address
                     <p>In frony for SDM court Sambhal, Utter Predesh,244302</p>
@@ -337,7 +417,7 @@
                     <li> <a href="#About "><i class="bi bi-link-45deg"></i> About</a></li>
                     <li> <a href="#Gallery "><i class="bi bi-link-45deg"></i> Gallery</a></li>
                     <li> <a href="#Team "><i class="bi bi-link-45deg"></i> Team</a></li>
-                    <li> <a href="#Contact "><i class="bi bi-link-45deg"></i> Contact us</a></li>
+                    <li> <a href="#Contactus"><i class="bi bi-link-45deg"></i> Contact us</a></li>
                 </ul>
                 <!-- <li>Reservations
                     <p>+916395615657</p>
