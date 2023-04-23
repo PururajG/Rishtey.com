@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishtey </title>
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+
+</head>
+
+<body>
+    <!------------------------------------- Header section start here------------------------------------>
+
+    <!-- <div class="navbar display-flex justify-center navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand mb-0 h1" href="index.html"><img draggable="false" src="./images/logo.png"
+                alt="">Rishtey</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="dashboard-navbar collapse navbar-collapse" id="navbarSupportedContent">
+
+            <a href="#"> <i class="bi bi-search"></i></a>
+            <a href="#"> <i class="bi bi-gear"></i></a>
+            <a href="#"> <i class="bi bi-bell"></i></a>
+            <a href="index.html"> <i class="bi bi-box-arrow-in-right"></i> Logout</a>
+
+        </div>
+    </div> -->
+
+
+    <!-- <div class="top-header">
+        <i onclick="topbtn()" id="toparrow" class="bi bi-arrow-up"></i>
+    </div> -->
+
+    <!-------------------------------------Custom script file link---------------------------->
+    <script text="" src="script.js"></script>
+
+
+
+    <!------------------------------------- dashboard  start here------------------------------------>
+
+    <div class="dashboard">
+        <div>
+            <div class="profile">
+                <div class="nav-list">
+                    <ul>
+                        <li><i class="bi bi-person-fill"></i><span>1</span> </li>
+                        <li><i class="bi bi-person-workspace"></i><span>8</span> </li>
+                        <li><i class="bi bi-image"></i><span>3</span> </li>
+                        <li><i class="bi bi-list"></i><span class="profile-menu-icon">0</span> </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="profile-content">
+                    <div class="profile-img">
+                        <img class="" src="images/member.jpg" alt="">
+                    </div>
+
+                    <h4>Abhishek</h4>
+                    <p>About you in short</p>
+                    <ul class="left-list">
+                        <a href="#Dashboard">
+                            <li class="Active"><i class="bi bi-pencil-square"></i> &nbsp; Edit Profile</li>
+                        </a>
+                        <a href="#My Matches">
+                            <li><i class="bi bi-info-circle"></i> &nbsp; My Matches </li>
+                        </a>
+                        <a href="#My Profile">
+                            <li><i class="bi bi-person-circle"></i> &nbsp; My Profile</li>
+                        </a>
+                        <a href="#My Messege">
+                            <li><i class="bi bi-envelope"></i> &nbsp; My Messege</li>
+                        </a>
+                        <!-- <a href="#My Membership">
+                            <li><i class="bi bi-people"></i> &nbsp; My Membership</li>
+                        </a> -->
+                        <a href="#My Favorites">
+                            <li><i class="bi bi-people"></i> &nbsp; My Connection</li>
+                        </a>
+                        <a href="#Packages">
+                            <li><i class="bi bi-bar-chart-line"></i> &nbsp; Packages </li>
+                        </a>
+                        <a href="#Dashboard"> <!-- <li><i class="bi bi-currency-dollar"></i> My Balance</li> --></a>
+                        <!-- <a href="#Advertising">
+                            <li><i class="bi bi-megaphone"></i> &nbsp; Advertising</li>
+                        </a> -->
+                        <a href="index.html">
+                            <li><i class="bi bi-power"></i> &nbsp; Logout</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-navbar" id="navbarSupportedContent">
+            <div class="nav-search-box">
+                <a href="#">
+                    <i class="bi bi-search"></i><input type="search" placeholder="Search here"> </a>
+            </div>
+            <div class="nav-logout-icon">
+                <a href="#"> <i class="bi bi-gear"></i></a>
+                <a href="#"> <i class="bi bi-bell"><span>3</span></i></a>
+                <a href="#"> <img src="images/member.jpg" alt=""> <samp>Abhishek</samp></a>
+                <a href="index.html"> <button> Logout</button></a>
+            </div>
+        </div>
+
+        <!---------------- dashboard home right first list  -------------- -->
+        <div class="dashboard-home" id="Dashboard">
+            <div>
+                <h3 class="active">Active now</h3>
+                <p>Current Status</p>
+                <button class="btn btn-outline-secondary">Upgrade</button>
+            </div>
+            <div>
+                <h3>2</h3>
+                <p>My Likes</p>
+                <button class="btn btn-outline-secondary">View all</button>
+            </div>
+            <div>
+                <h3>5</h3>
+                <p>Profile Viewer</p>
+                <button class="btn btn-outline-secondary">View all</button>
+            </div>
+
+            <div>
+                <h3>3</h3>
+                <p>My Favorites </p>
+                <a href="#My Favorites"> <button class="btn btn-outline-secondary">View All</button></a>
+            </div>
+        </div>
+
+        <!---------------- dashboard home right second list  -------------- -->
+
+        <div class="dashboard-second-list">
+            <div>
+                <h3><i class="bi bi-heart"></i></h3>
+                <p>Add Profile</p>
+                <p>Here you can add a new profile</p>
+                <button class="btn btn-outline-secondary ">Continue</button>
+            </div>
+            <div>
+                <h3><i class="bi bi-envelope"></i></h3>
+
+                <p>Messege</p>
+                <p>Here you can send messeges</p>
+                <button class="btn btn-outline-secondary ">Continue</button>
+            </div>
+            <div>
+                <h3><i class="bi bi-info-circle"></i></h3>
+
+                <p>Profile View</p>
+                <p>Here you can view profile </p>
+                <a href="#My Profile"> <button class="btn btn-outline-secondary">View Profile </button></a>
+            </div>
+
+            <div>
+                <h3><i class="bi bi-people"></i></h3>
+
+                <p>My Connection </p>
+                <p>Here you can View Members</p>
+                <button class="btn btn-outline-secondary">Continue</button>
+            </div>
+        </div>
+
+
+        <!-------------------------------- Here the Matches section is strat -------------------------------->
+
+        <div class="matches-sction" id="My Matches">
+            <h4 class="mt-4">20 Total Matches</h4>
+            <p>Members who match your partner preferences</p>
+            <div class="Matches-list">
+                <!-- <div class="Matches-list-item">
+                    <div class="Matches-list-img"><img src="images/couple (3).jpg" alt=""></div>
+                    <div class="Matches-list-content">
+                        <h3>Name</h3>
+                        <p class="member-id">Member ID : <span>01AE52</span></p>
+
+                       
+                        <ul class="member-details">
+                            <li>Age</li>
+                            <li>Religion</li>
+                            <li>First language</li>
+                            <li>Location</li>
+                            <li>Height</li>
+                            <li>Caste</li>
+                            <li>Marital status</li>
+                        </ul>
+
+                        <ul class="detail-icons">
+                            <li><i class="bi bi-person-circle"></i>21</li>
+                            <li><i class="bi bi-gear"></i>Hindu</li>
+                            <li><i class="bi bi-bell"></i>Hindi</li>
+                            <li><i class="bi bi-info-circle"></i>Moradabad</li>
+                            <li><i class="bi bi-info-circle"></i>5.2</li>
+                            <li><i class="bi bi-info-circle"></i>mail</li>
+                            <li><i class="bi bi-info-circle"></i>never</li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="Matches-list-item">
+                    <div class="Matches-list-img"><img src="images/Members/girl (6).png" alt=""></div>
+                    <div class="Matches-list-content">
+                        <h3>Anshika Verma</h3>
+                        <p class="member-id">Member ID : <span>01AB11</span></p>
+                        <table>
+                            <tr>
+                                <th>Age</th>
+                                <td>22</td>
+                                <th>Height</th>
+                                <td>5.3</td>
+
+                            </tr>
+                            <tr>
+                                <th>Caste</th>
+                                <td>Verma</td>
+                                <th>Marital status</th>
+                                <td>Never marride</td>
+                            </tr>
+                            <tr>
+                                <th>Religion</th>
+                                <td>Hindu</td>
+                                <th>Profession</th>
+                                <td>Job</td>
+
+                            </tr>
+                            <tr>
+                                <th>Mother Tongue</th>
+                                <td>Hindi</td>
+                                <th>Annual Income</th>
+                                <td>2L</td>
+
+                            </tr>
+                            <tr>
+                                <th>Location</th>
+                                <td>Moradabad</td>
+
+                            </tr>
+                        </table>
+
+                        <ul class="detail-icons">
+                            <a href="Fulll profile.html">
+                                <li><i class="bi bi-person-circle"></i> Full profile</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-list-task"></i> Shortlist</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-chat-dots"></i> Chat Now</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-exclamation-circle"></i> Report</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Matches-list-item">
+                    <div class="Matches-list-img"><img src="images/Members/girl (1).png" alt=""></div>
+                    <div class="Matches-list-content">
+                        <h3>Sneha Bansal</h3>
+                        <p class="member-id">Member ID : <span>02AD31</span></p>
+                        <table>
+                            <tr>
+                                <th>Age</th>
+                                <td>21</td>
+                                <th>Height</th>
+                                <td>5.2</td>
+
+                            </tr>
+                            <tr>
+                                <th>Caste</th>
+                                <td>Bansal</td>
+                                <th>Marital status</th>
+                                <td>Never marride</td>
+                            </tr>
+                            <tr>
+                                <th>Religion</th>
+                                <td>Hindu</td>
+                                <th>Profession</th>
+                                <td>Job</td>
+
+                            </tr>
+                            <tr>
+                                <th>Mother Tongue</th>
+                                <td>Hindi</td>
+                                <th>Annual Income</th>
+                                <td>1L</td>
+
+                            </tr>
+                            <tr>
+                                <th>Location</th>
+                                <td>Delhi</td>
+
+                            </tr>
+                        </table>
+
+                        <ul class="detail-icons">
+                            <a href="Fulll profile.html">
+                                <li><i class="bi bi-person-circle"></i> Full profile</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-list-task"></i> Shortlist</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-chat-dots"></i> Chat Now</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-exclamation-circle"></i> Report</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="Matches-list-item">
+                    <div class="Matches-list-img"><img src="images/couple (3).jpg" alt=""></div>
+                    <div class="Matches-list-content">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="Matches-list-item">
+                    <div class="Matches-list-img"><img src="images/couple (3).jpg" alt=""></div>
+                    <div class="Matches-list-content">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div> -->
+                <div class="Matches-list-item">
+                    <div class="Matches-list-img"><img src="images/Members//girl (3).png" alt=""></div>
+                    <div class="Matches-list-content">
+                        <h3>Saanvi Sharma</h3>
+                        <p class="member-id">Member ID : <span>03AE32</span></p>
+                        <table>
+                            <tr>
+                                <th>Age</th>
+                                <td>20</td>
+                                <th>Height</th>
+                                <td>5.2</td>
+
+                            </tr>
+                            <tr>
+                                <th>Caste</th>
+                                <td>Sharma</td>
+                                <th>Marital status</th>
+                                <td>Never marride</td>
+                            </tr>
+                            <tr>
+                                <th>Religion</th>
+                                <td>Hindu</td>
+                                <th>Profession</th>
+                                <td>Job</td>
+
+                            </tr>
+                            <tr>
+                                <th>Mother Tongue</th>
+                                <td>Hindi</td>
+                                <th>Annual Income</th>
+                                <td>1.5L</td>
+
+                            </tr>
+                            <tr>
+                                <th>Location</th>
+                                <td>Moradabad</td>
+
+                            </tr>
+                        </table>
+
+                        <ul class="detail-icons">
+                            <a href="Fulll profile.html">
+                                <li><i class="bi bi-person-circle"></i> Full profile</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-list-task"></i> Shortlist</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-chat-dots"></i> Chat Now</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-exclamation-circle"></i> Report</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Matches-list-item">
+                    <div class="Matches-list-img"><img src="images/Members/girl (4).png" alt=""></div>
+                    <div class="Matches-list-content">
+                        <h3>Meghna sinha </h3>
+                        <p class="member-id">Member ID : <span>04AE21</span></p>
+                        <table>
+                            <tr>
+                                <th>Age</th>
+                                <td>24</td>
+                                <th>Height</th>
+                                <td>5.4</td>
+
+                            </tr>
+                            <tr>
+                                <th>Caste</th>
+                                <td>sinha</td>
+                                <th>Marital status</th>
+                                <td>Never marride</td>
+                            </tr>
+                            <tr>
+                                <th>Religion</th>
+                                <td>Hindu</td>
+                                <th>Profession</th>
+                                <td>Job</td>
+
+                            </tr>
+                            <tr>
+                                <th>Mother Tongue</th>
+                                <td>Hindi</td>
+                                <th>Annual Income</th>
+                                <td>2L</td>
+
+                            </tr>
+                            <tr>
+                                <th>Location</th>
+                                <td>Moradabad</td>
+
+                            </tr>
+                        </table>
+
+                        <ul class="detail-icons">
+                            <a href="Fulll profile.html">
+                                <li><i class="bi bi-person-circle"></i> Full profile</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-list-task"></i> Shortlist</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-chat-dots"></i> Chat Now</li>
+                            </a>
+                            <a href="#">
+                                <li><i class="bi bi-exclamation-circle"></i> Report</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------------------------- Here the main user profile section is start -------------------------------->
+
+        <div class="user-profile mt-5" id="My Profile">
+
+            <div class="user-profile-content">
+                <div class="user-profile-header">
+                    <h3>Profile information</h3>
+                    <p>
+                        <i class="bi bi-pencil"></i>
+                        Edit all
+                    </p>
+                </div>
+                <hr>
+                <p class="member-id">Member ID: <span>12A0C</span></p>
+                <hr>
+                <div class="user-Intro">
+                    <h3>Introduction</h3>
+                    <i class="bi bi-pencil"></i>
+                </div>
+
+                <p>My name is Abhishek kumar and i am looking for girl. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Consequuntur aspernatur eos similique illo! Obcaecati, quibusdam consectetur
+                    adipisicing elit. Consequuntur aspernatur eos similique illo! Obcaecati, quibusdam..</p>
+
+                <div class="basic-info">
+                    <h3> Basic information</h3>
+                    <i class="bi bi-pencil"></i>
+
+                </div>
+                <table>
+                    <tr>
+                        <th>Profile Created for:</th>
+                        <td>Myself</td>
+                        <th>Age:</th>
+                        <td>24</td>
+
+                    </tr>
+                    <tr>
+                        <th>First Name:</th>
+                        <td>Abhishek</td>
+                        <th>Last Name:</th>
+                        <td>Kumar</td>
+
+                    </tr>
+                    <tr>
+                        <th>Gender:</th>
+                        <td>Male</td>
+                        <th>Marital status:</th>
+                        <td>Never marride</td>
+                    </tr>
+                    <tr>
+                        <th>Physical status:</th>
+                        <td>Normal</td>
+                        <th>Height:</th>
+                        <td>5ft 4in</td>
+                    </tr>
+                    <tr>
+                        <th>Religion:</th>
+                        <td>Hindu</td>
+                        <th>Email:</th>
+                        <td>abc@gmail.com</td>
+
+                    </tr>
+                    <tr>
+                        <th>Mother Tongue:</th>
+                        <td>Hindi</td>
+                        <th>Annual Income:</th>
+                        <td>2L</td>
+
+                    </tr>
+                    <tr>
+                        <th>Location:</th>
+                        <td>Moradabad</td>
+
+                    </tr>
+                </table>
+                <h2 class="mt-4"> Contact Details</h2>
+                <p><strong>Contact Number:</strong> +91 9012356451</p>
+                <p><strong>Contact Number:</strong> +91 8952645452</p>
+                <p><strong>Chet status:</strong> Online</p>
+                <p><strong>Mail:</strong> available</p>
+            </div>
+        </div>
+
+        <!-------------------------------- Here the  messege section is start -------------------------------->
+
+        <div class="Chet-section mt-5" id="My Messege">
+
+            <div>
+                <img src="images/Members/Personal-Messaging.png" alt="Chating section">
+            </div>
+        </div>
+
+
+
+        <!-------------------------------- Here the Favorite list section is start -------------------------------->
+
+        <div class="favorite-section mt-5" id="My Favorites">
+            <div class="favorit-list">
+                <!-- <h1 class="text-center">Your Favorite List </h1> -->
+                <table>
+                    <tr>
+                        <th>Profile Picture</th>
+                        <th>Name</th>
+                        <th>Religion</th>
+                        <th>Age</th>
+                        <th>Location</th>
+                        <th>Shortlist</th>
+                        <th>Ignore</th>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Members/girl (6).png" alt=""></td>
+                        <td>Anshika Verma</td>
+                        <td>Hindu</td>
+                        <td>24</td>
+                        <td>Moradabad</td>
+                        <td><button class="btn btn-success"><i class="bi bi-person-check-fill"></i> Addeed</button>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Members/girl (2).png" alt=""></td>
+                        <td>Rekha Kashyap </td>
+                        <td>Hindu</td>
+                        <td>22</td>
+                        <td>Rampur</td>
+                        <td></td>
+                        <td><button class="btn btn-danger "><i class="bi bi-person-x-fill"></i> Rejected</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Members/girl (1).png" alt=""></td>
+                        <td>Sneha Bansal</td>
+                        <td>Hindu</td>
+                        <td>21</td>
+                        <td>Delhi</td>
+                        <td><button class="btn btn-success"><i class="bi bi-person-check-fill"></i> Addeed</button>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Members/girl (4).png" alt=""></td>
+                        <td>Meghna sinha</td>
+                        <td>Hindu</td>
+                        <td>24</td>
+                        <td>Moradabad</td>
+                        <td></td>
+                        <td><button class="btn btn-danger "><i class="bi bi-person-x-fill"></i> Rejected</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Members/girl (5).png" alt=""></td>
+                        <td>Kajal Gour</td>
+                        <td>Hindu</td>
+                        <td>23</td>
+                        <td>Sambhal</td>
+                        <td><button class="btn btn-success"><i class="bi bi-person-check-fill"></i> Addeed</button>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+        <!----------------------dashboard card section start here--------------------------->
+
+        <div class="cards mt-5" id="Packages">
+            <div class="card-item">
+                <p><strong>Gold</strong>3 Months</p>
+                <h3> &#x20B9; 4,150</h3>
+                <span> &#x20B9; 1,383</span>
+                <button class="btn btn-outline-success btn-sm">Continue</button>
+                <ul>
+                    <li><i class="bi bi-check"></i>Send unlimited messeges</li>
+                    <li><i class="bi bi-check"></i>View upto 75 contacts numbers</li>
+                    <li><i class="bi bi-check"></i>3 Shadi live passes worth INR 1500</li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="card-item">
+                <p><strong>Gold</strong>3 Months</p>
+                <h3> &#x20B9; 5,240</h3>
+                <span> &#x20B9; 1,383</span>
+                <button class="btn btn-outline-success btn-sm">Continue</button>
+                <ul>
+                    <li><i class="bi bi-check"></i>Send unlimited messeges</li>
+                    <li><i class="bi bi-check"></i>View upto 75 contacts numbers</li>
+                    <li><i class="bi bi-check"></i>3 Shadi live passes worth INR 1500</li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="card-item">
+                <p><strong>Gold</strong>3 Months</p>
+                <h3> &#x20B9; 6,240</h3>
+                <span> &#x20B9; 1,383</span>
+                <button class="btn btn-outline-success btn-sm">Continue</button>
+                <ul>
+                    <li><i class="bi bi-check"></i>Send unlimited messeges</li>
+                    <li><i class="bi bi-check"></i>View upto 75 contacts numbers</li>
+                    <li><i class="bi bi-check"></i>3 Shadi live passes worth INR 1500</li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="card-item">
+                <p><strong>Gold</strong>3 Months</p>
+                <h3> &#x20B9; 7,150</h3>
+                <span> &#x20B9; 1,383</span>
+                <button class="btn btn-outline-success btn-sm">Continue</button>
+                <ul>
+                    <li><i class="bi bi-check"></i>Send unlimited messeges</li>
+                    <li><i class="bi bi-check"></i>View upto 75 contacts numbers</li>
+                    <li><i class="bi bi-check"></i>3 Shadi live passes worth INR 1500</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-------------------------------- Here the footer section is strat -------------------------------->
+
+
+    <!-- <footer class="footer">
+        <div class="Footer-container">
+            <div>
+                <ul class="lists">
+
+                    <li>
+                        <!- <p class="foot-heading"> <img src="./Images/Raj-hotel.png" alt=""></p> ->
+                        <p class="foot-about">Your Welcome to the best couple plateform. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Velit quas
+                            corporis ipsa nulla repellat molestias illo itaque necessitatibus perspiciatis facilis unde,
+                            veritatis, tenetur optio accusamus.</p>
+                </ul>
+                <!- <li>Our Address
+                    <p>In frony for SDM court Sambhal, Utter Predesh,244302</p>
+                </li> ->
+            </div>
+            <div>
+                <ul class="lists">
+                    <li>
+                        <p class="foot-heading">Quick links </p>
+                    </li>
+                    <li> <a href="#Home "><i class="bi bi-link-45deg"></i> Home</a></li>
+                    <li> <a href="#About "><i class="bi bi-link-45deg"></i> About</a></li>
+                    <li> <a href="#Gallery "><i class="bi bi-link-45deg"></i> Gallery</a></li>
+                    <li> <a href="#Membership "><i class="bi bi-link-45deg"></i> Membership</a></li>
+                    <li> <a href="#Contact "><i class="bi bi-link-45deg"></i> Contact us</a></li>
+                </ul>
+                <!- <li>Reservations
+                    <p>+916395615657</p>
+                </li> ->
+            </div>
+            <div>
+                <ul class="lists">
+                    <li>
+                        <p class="foot-heading">Connect with us</p>
+                    </li>
+                    <li> <a href="#"><i class="bi bi-telephone-fill"></i> Phone <br> +91 6395615657</a>
+                    </li>
+                    <li> <a href="#"><i class="bi bi-envelope"></i> Email Id <br> pururajsbl20@gmail.com</a></li>
+                    <li> <a href="#"><i class="bi bi-geo-alt-fill"></i> Location <br> No. 52 In fron of sdm court
+                            sambhal, Utter Predesh 244302</a></li>
+                    <li> <a href="#"></a></li>
+                </ul>
+                <!- <li>Whatsapp</li> ->
+            </div>
+            <div>
+                <ul class="lists">
+                    <li>
+                        <p class="foot-heading ">Follow Us</p>
+                    </li>
+                    <li> <a href="#"><i class="bi bi-facebook"></i> facebook </a> </li>
+                    <li> <a href="#"> <i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li> <a href="#"> <i class="bi bi-telegram"></i> Telegram</a></li>
+                    <li>
+                        <a href="#"><i class="bi bi-twitter"></i> twitter </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <p class="copywrite">Copyright &copy; 2023 All rights reserved.</p>
+    </footer> -->
+
+    <!-- <script>
+        onload(
+            alert("Welcome to Rishtey.com")
+        )
+    </script> -->
+    <!-- bootstrap js link -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
