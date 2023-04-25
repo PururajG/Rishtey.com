@@ -1318,21 +1318,42 @@
 
  .user-profile {
      grid-column: 2/-1;
-     width: 80%;
+     width: 95%;
  }
 
- .user-profile-content table tr:nth-child(odd) {
-     background-color: #f0f0f0;
+ .user-profile input {
+     /* border: none; */
+     outline: none;
  }
 
+ /* .user-profile-content table tr:nth-child(odd) {
+     background-color: #f8f8f8;
+ }
+ .user-profile-content table tr input:nth-child(even) {
+    background-color: #ffffff;
+
+ } */
+
+ /* .user-profile-content p input{
+    width: 80%;
+    padding: 20px 30px;
+ } */
  .user-profile-content table th {
      color: #606060;
  }
 
  .user-profile-content table td {
      padding: 10px 80px;
-     border-bottom: 1px solid black;
  }
+
+ .user-profile-content table td input {
+     color: rgb(66, 66, 66);
+     /* background-color: #f8f8f8; */
+     padding: 2px 10px;
+     width: 100%;
+
+ }
+
 
  .user-profile-content i {
      background-color: #fe84a5;
@@ -1356,10 +1377,23 @@
      font-size: 20px;
  }
 
+ .user-profile-content .member-id input {
+     color: red;
+     padding: 0px 10px;
+ }
+
  .user-Intro {
      display: flex;
      justify-content: space-between;
      /* border: 1px solid rgb(255, 165, 165); */
+ }
+
+ .intro textarea {
+   text-decoration: none;
+     outline: none;
+     width: 88%;
+     height: 80px;
+
  }
 
  .basic-info {
@@ -1404,6 +1438,15 @@
      border: 1px solid black;
      padding: 13px;
      text-align: center;
+ }
+
+ .favorite-section table tr td a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .favorite-section table tr td a:hover {
+     color: gray;
  }
 
  .favorite-section table td img {
@@ -1491,7 +1534,7 @@
  .Profile-left-image img {
      height: 230px;
      width: 300px;
-      margin: 35px; 
+     margin: 35px;
      border-radius: 20px;
      box-shadow: 0px 0px 5px 2px black;
  }
@@ -1524,7 +1567,7 @@
  .full-profile-detail table tr th {
      color: #606060;
      padding-right: 50px;
-     margin: 50px;
+     margin: 5px;
  }
 
  .full-profile-detail table tr td {
