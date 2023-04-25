@@ -1389,7 +1389,7 @@
  }
 
  .intro textarea {
-   text-decoration: none;
+     text-decoration: none;
      outline: none;
      width: 88%;
      height: 80px;
@@ -1522,7 +1522,7 @@
  .Full-profile .Profile-container {
      display: flex;
      justify-content: space-around;
-     /* width: 100%; */
+     width: 80%;
      padding: 15px;
      margin: auto;
  }
@@ -1552,7 +1552,7 @@
      margin: auto;
      background-color: #2d7934;
      position: absolute;
-     top: 70%;
+     top: 75%;
      left: 30%;
      border-radius: 10px;
      bottom: 5px;
@@ -1562,6 +1562,10 @@
  /*------- table ful profile content -------*/
  .full-profile-detail {
      padding: 2% 7%;
+ }
+
+ .full-profile-detail table {
+     width: 120%;
  }
 
  .full-profile-detail table tr th {
