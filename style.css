@@ -973,7 +973,7 @@
      /* 'profile cards cards cards '; */
      /* 'profile footer footer '; */
 
-     grid-template-rows: 60px 180px 250px;
+     /* grid-template-rows: 60px 180px 250px; */
      grid-template-columns: repeat(2, 1fr) 250px 580px;
      grid-gap: 10px;
 
@@ -1085,7 +1085,7 @@
      width: 100%;
      background: rgb(255, 221, 221);
      grid-column: 2/-1;
-     position: sticky;
+     position: relative;
      top: 0;
  }
 
@@ -1196,7 +1196,7 @@
 
  /* ------------------------------------------dashboard home contemts lists------------------------------- */
 
- .dashboard-home {
+ /* .dashboard-home {
      grid-column: 2/-1;
      display: flex;
      text-align: center;
@@ -1213,11 +1213,11 @@
  .dashboard-home .active {
      color: green;
 
- }
+ } */
 
  /* ------------------------------------------dashboard home second list contemts lists------------------------------- */
 
- .dashboard-second-list {
+ /* .dashboard-second-list {
      grid-column: 2/-1;
      display: flex;
      text-align: center;
@@ -1234,7 +1234,7 @@
  .dashboard-second-list div i {
      font-size: 55px;
      color: rgb(255, 88, 88);
- }
+ } */
 
  /*---------------------------------- dashboard Matches section css start ----------------------------------*/
 
@@ -1403,24 +1403,317 @@
 
 
 
- /* --------------------Chet section start----------------------- */
- .Chet-section {
+ /* -----------------------------Chat section start-------------------------------- */
+ .Chat-section {
      grid-column: 2/-1;
-     width: 80%;
+     /* width: 90%; */
+     height: 100vh;
  }
 
- .Chet-section img {
+ .chat-container {
+     display: grid;
+     grid-template-columns: 380px 1fr;
+     /* padding: 0px 25px; */
+     /* margin-right: 5%; */
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }
+
+ /* -----------------------------Chat left side header start-------------------------------- */
+
+ .recent-chat-box {
+     /* background-color: #feb0b0c1; */
+     /* width: 80%; */
      border: 1px solid black;
-     /* box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.398); */
-     border-top-right-radius: 20px;
-     border-bottom-right-radius: 20px;
-     /* width: 100%; */
+     border-right: none;
  }
 
- .Chet-section img:hover {
-     box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.398);
+ .recent-chat-box-header {
+     display: flex;
+     justify-content: space-between;
+     /* margin: 15px; */
+     padding: 15px;
+     height: 80px;
+     border-bottom: 1px solid rgb(193, 193, 193);
+ }
+
+ .recent-chat-box-header div h4 {
+     color: rgb(21, 21, 21);
+ }
+
+ .chat-header-search input {
+     background-color: transparent;
+     border: none;
+     border-bottom: 1px solid rgb(193, 193, 193);
+     outline: none;
+ }
+
+ .chat-header-search i {
+     font-size: 20px;
+ }
+
+ /* ---------------ChatBOx recent-chat-list left side start----------------- */
+ /* .recent-chat-list::-webkit-scrollbar {
+    width: 16px;
+    background: #000;
+}
+ .recent-chat-list::-webkit-scrollbar-track:hover {
+     color: rgb(0, 255, 132);
+     background: #000;
+     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+ }
+
+ .recent-chat-list::-webkit-scrollbar-thumb {
+     background-color: darkgrey;
+     outline: 1px solid slategrey;
+ } */
+ /* 0000000000000 */
+
+ /* .recent-chat-list::-webkit-scrollbar {
+     width: 16px;
+ }
+
+ .recent-chat-list::-webkit-scrollbar-track {
+     background: #eeeeee;
+ }
+
+ .recent-chat-list::-webkit-scrollbar-thumb {
+     background-color: #ffaeae;
+     box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px black;
+ }
+
+ .recent-chat-list::-webkit-scrollbar-thumb:hover {
+     background: #c86c6c;
+ } */
 
 
+ /* 00000000000000 */
+ .recent-chat-list {
+     /* background: #484848; */
+     height: 590px;
+     overflow-y: scroll;
+ }
+
+
+ .recent-chat-list-items {
+     display: flex;
+     align-items: center;
+     /* text-align: start; */
+     justify-content: space-between;
+     padding: 2% 5%;
+     transition: all 0.2s;
+     height: 100px;
+     cursor: pointer;
+     border-bottom: 1px solid rgb(193, 193, 193);
+ }
+
+ .recent-chat-list-items:hover {
+     background: #eeeeee;
+     transform: scale(0.970);
+ }
+
+ .chat-active {
+     background: #eeeeee;
+
+ }
+
+ .recent-chat-list-items img {
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+ }
+
+ .recent-chat-list-text {
+     padding: 15px;
+ }
+
+ .recent-chat-list-text>p {
+
+     color: rgb(157, 157, 157);
+ }
+
+ .recent-chat-list-text div {
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .recent-chat-list-text div h4 {
+     color: rgb(74, 74, 74);
+ }
+
+ .recent-chat-list-text div p {
+     color: green;
+ }
+
+ .recent-chat-list-text h4 {
+     font-size: 20px;
+ }
+
+ .recent-chat-list-text p {
+     font-size: 15px;
+
+ }
+
+
+ /* ---------------ChatBOx Messege header right side start----------------- */
+ .chatbox {
+     width: 90%;
+
+ }
+
+ .chatbox .mesg-header {
+     width: 100%;
+     background-color: #feb0b0c1;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+     border: 1px solid rgb(74, 74, 74);
+     border-bottom: none;
+
+ }
+
+ .chatbox .mesg-header img {
+     height: 50px;
+     width: 100%;
+     border-radius: 50%;
+     cursor: pointer;
+
+ }
+
+ .mesg-logo a {
+     display: flex;
+     align-items: center;
+     color: #000000;
+     text-decoration: none;
+ }
+
+
+
+
+ .activ-user h4 {
+     margin-left: 10px;
+     color: rgb(8, 8, 8);
+     font-size: 20px;
+     cursor: pointer;
+
+ }
+
+ .activ-user h6 {
+     font-size: 15px;
+     margin-left: 10px;
+     line-height: 20px;
+     cursor: pointer;
+     color: rgb(98, 98, 98);
+ }
+
+ .header-icon i {
+     color: rgb(29, 27, 27);
+     font-size: 22px;
+     margin: 10px;
+     cursor: pointer;
+ }
+
+ .header-icon i:hover {
+     color: rgb(132, 132, 132);
+
+ }
+
+ /* --------------------ChatBOx Messege body start----------------------- */
+ .mesg-body {
+     border: 1px solid black;
+     background-color: #fff;
+     background: url(images/Chat\ wall.jpg) no-repeat;
+     background-size: cover;
+ }
+
+ .recieved-mesg {
+     display: flex;
+     justify-content: start;
+     padding: 5px;
+     margin: 1px 15px;
+     align-items: center;
+     border-radius: 30px;
+ }
+
+ .user-messege img {
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     margin: 10px;
+ }
+
+ .user-messege .user-msg-text {
+     background: #e8e8e8;
+     border-radius: 20px;
+     width: 50%;
+     text-align: start;
+     padding: 10px 20px;
+     transition: all 0.2s;
+ }
+
+ .user-messege .user-msg-text .mesg-time {
+     font-size: 12px;
+     color: green;
+     text-align: end;
+
+ }
+
+ .user-msg-text:hover {
+     box-shadow: 0px 0px 5px 0px black;
+ }
+
+ .sent-mesg {
+     margin: 0px 15px;
+     padding: 5px;
+     border-radius: 30px;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+
+ }
+
+
+ /* --------------------ChatBOx Messege footer start----------------------- */
+
+ .chatbox .mesg-footer {
+     height: 80%;
+     /* width: 100%; */
+     padding: 20px;
+     /* border: 1px solid black; */
+     background-color: #feb0b0c1;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+
+ .footer-icons i {
+     margin: 10px;
+     cursor: pointer;
+     color: rgb(56, 56, 56);
+     font-size: 20px;
+ }
+
+
+
+ .mesg-footer input {
+     padding: 10px 20px;
+     border-radius: 30px;
+     /* width: 200px; */
+     outline: none;
+     border: none;
+ }
+
+ .input-box i {
+     position: relative;
+     top: 2px;
+     left: -18%;
+     font-size: 20px;
+     color: rgb(10, 10, 10);
+
+     cursor: pointer;
  }
 
  /* <!-------------------------------- Here the Favorite list section is start --------------------------------> */
